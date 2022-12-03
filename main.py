@@ -1,5 +1,5 @@
 print("hello world")
-print('hola mundo')
+print("hola mundo")
 
 # para agregar un cambio es:
 # 1) git add main.py
@@ -7,4 +7,5 @@ print('hola mundo')
 # 3) git commit -m "mensaje"
 # 4) git push origin main
 
-print('gol')
+print("gol")
+
