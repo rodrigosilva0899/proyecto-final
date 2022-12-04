@@ -14,10 +14,6 @@ def saludar_a(request, nombre):
 
 def sumar(request, a, b):
     return render(request,
-    "ejemplo/sumar.html,",
-    {"a":a,
-    "b":b,
-    "resultado": a+b
-    }
-    )
+    "ejemplo/sumar.html",
+    {"a": a, "b": b, "resultado": a + b})
 
