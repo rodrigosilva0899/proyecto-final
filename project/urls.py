@@ -30,4 +30,5 @@ urlpatterns = [
     path('mi-familia/borrar/<int:pk>', BorrarFamiliar.as_view()),
     path('panel-familia/', FamiliarList.as_view()),
     path('panel-familia/crear', FamiliarCrear.as_view()),
+    path('panel-familia/<int:pk>/detalle', FamiliarDetalle.as_view()),
 ]
