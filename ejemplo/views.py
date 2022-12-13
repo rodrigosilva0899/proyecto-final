@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from ejemplo.models import Familiar
 from ejemplo.forms import Buscar, FamiliarForm
 from django.views import View
+from django.views.generic import ListView, CreateView
 
 # Create your views here.
 
@@ -113,4 +114,13 @@ class BorrarFamiliar(View):
 
 
 
+
+class FamiliarList(ListView):
+  model = Familiar
+
+
+class FamiliarCrear(CreateView):
+  model = Familiar
+  success_url = "/panel-familia"
+  fields = ["nombre", "direccion", "numero_pasaporte"]
 
